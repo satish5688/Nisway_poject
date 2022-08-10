@@ -33,7 +33,7 @@ knex.schema.hasTable('salary').then(exists => {
             console.log("oooooooo");
 
         }).then(async() => {
-            const unparsed_data = fs.readFileSync('company_data.json')
+            const unparsed_data = fs.readFileSync('./convesion/company_data.json')
             const data = JSON.parse(unparsed_data)
 
             let count = 0
